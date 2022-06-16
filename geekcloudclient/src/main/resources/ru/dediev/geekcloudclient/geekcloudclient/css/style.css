@@ -1,0 +1,15 @@
+.parent{
+    -fx-background-color: #f5f5f7;
+}
+
+.sidebar{
+    -fx-background-color: #2D3039;
+}
+
+.fontawesomeicon{
+    -fx-fill: grey;
+}
+
+.green-btn{
+    -fx-background-color:#35C882;
+}
