@@ -1,4 +1,4 @@
-package ru.geekbrains.server;
+package ru.dediev.geekcloudserver;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,14 +9,16 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
-public class Main {
+public class Server {
 
     public static void main(String[] args) throws IOException {
-        final File outputFile = new File("file.iso");
 
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.socket().bind(new InetSocketAddress(9999));
         SocketChannel socketChannel = serverSocketChannel.accept();
+
+
+        final File outputFile = new File("rufus.exe");
 
         ByteBuffer buffer = ByteBuffer.allocate(8);
         socketChannel.read(buffer);

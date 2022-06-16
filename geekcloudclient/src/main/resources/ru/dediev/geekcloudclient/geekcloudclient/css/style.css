@@ -9,3 +9,7 @@
 .fontawesomeicon{
     -fx-fill: grey;
 }
+
+.green-btn{
+    -fx-background-color:#35C882;
+}
